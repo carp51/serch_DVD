@@ -1,31 +1,23 @@
-#myInput {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  width: 40%; /* 幅を指定 */
-  margin-top: 50px;
-}
-
-#myDiv {
-  text-align: center;
-  display: block;
-  justify-content: center;
-}
-
-#myImage {
-  max-width: 100%;
-  height: auto;
-  display: none;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#showButton {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-#hideButton {
-  text-align: center;
-  margin-bottom: 50px;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="search.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="showButton">
+        <button onclick="showImage()">画像を表示</button>
+    </div>
+    <div id="hideButton">
+        <button onclick="hideImage()">画像を非表示</button>
+    </div>
+    <img id="myImage" src="地図.jpeg" style="display:none"/>
+    
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="検索したい言葉を入力してください。">
+    <div id="myDiv"></div>
+</body>
+</html>
